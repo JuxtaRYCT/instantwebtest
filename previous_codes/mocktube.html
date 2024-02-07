@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock YouTube Page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #FF0000;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .video-card {
+            flex: 1 1 220px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .video-card img {
+            max-width: 100%;
+            display: block;
+        }
+
+        .video-card h3 {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .video-card p {
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <h1>MockTube</h1>
+    </header>
+    <section class="video-grid">
+        <!-- Repeat this block for each video card -->
+        <div class="video-card">
+            <img src="./Screenshot 2024-02-07 at 8.24.11 PM.png" alt="Video Thumbnail">
+            <h3>Video Title</h3>
+            <p>Channel Name · Views · 1 hour ago</p>
+        </div>
+        <div class="video-card">
+            <img src="./Screenshot 2024-02-07 at 8.24.11 PM.png" alt="Video Thumbnail">
+            <h3>Video Title</h3>
+            <p>Channel Name · Views · 1 hour ago</p>
+        </div>
+        <div class="video-card">
+            <img src="./Screenshot 2024-02-07 at 8.24.11 PM.png" alt="Video Thumbnail">
+            <h3>Video Title</h3>
+            <p>Channel Name · Views · 1 hour ago</p>
+        </div>
+        <div class="video-card">
+            <img src="./Screenshot 2024-02-07 at 8.24.11 PM.png" alt="Video Thumbnail">
+            <h3>Video Title</h3>
+            <p>Channel Name · Views · 1 hour ago</p>
+        </div>
+        <div class="video-card">
+            <img src="./Screenshot 2024-02-07 at 8.24.11 PM.png" alt="Video Thumbnail">
+            <h3>Video Title</h3>
+            <p>Channel Name · Views · 1 hour ago</p>
+        </div>
+
+    </section>
+    <script>
+        // JavaScript to dynamically populate the videos might go here
+    </script>
+</body>
+
+</html>
