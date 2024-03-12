@@ -1,0 +1,64 @@
+<form id="form1">
+	<p>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name">
+	</p>
+	<p>
+		<label>Age:</label>
+		<input type="radio" id="age1" name="age" value="0-20"><label for="age1">0-20yrs</label>
+		<input type="radio" id="age2" name="age" value="21-40"><label for="age2">21-40yrs</label>
+		<input type="radio" id="age3" name="age" value="41-60"><label for="age3">41-60yrs</label>
+		<input type="radio" id="age4" name="age" value="61+"><label for="age4">61+yrs</label>
+	</p>
+	<p>
+		<label for="profession">Profession:</label>
+		<select id="profession" name="profession">
+			<option value="student">student</option>
+			<option value="employed">employed</option>
+			<option value="unemployed">unemployed</option>
+			<option value="retired">retired</option>
+		</select>
+	</p>
+</form>
+
+<form id="form2">
+	<p>
+		<label for="story">Your life story:</label>
+		<textarea id="story" name="story"></textarea>
+	</p>
+	<p>
+		<label for="biodata">Upload your biodata:</label>
+		<input type="file" id="biodata" name="biodata">
+	</p>
+	<p>
+		<label>Favorite Colors:</label>
+		<input type="checkbox" id="color1" name="color" value="green"><label for="color1">Green</label>
+		<input type="checkbox" id="color2" name="color" value="blue"><label for="color2">Blue</label>
+		<input type="checkbox" id="color3" name="color" value="red"><label for="color3">Red</label>
+		<input type="checkbox" id="color4" name="color" value="yellow"><label for="color4">Yellow</label>
+	</p>
+</form>
+
+
+<script>
+	document.getElementById("profession").addEventListener("change", function () {
+		var advice = {
+			student: "Keep learning and exploring!",
+			employed: "Balance work with personal time!",
+			unemployed: "Keep looking, your opportunity is out there!",
+			retired: "Enjoy your retirement and explore new hobbies!"
+		};
+		alert(advice[this.value]);
+	});
+
+	var checkboxes = document.querySelectorAll('input[type="checkbox"][name="color"]');
+	checkboxes.forEach(function (checkbox) {
+		checkbox.addEventListener('change', function () {
+			if (this.checked) {
+				document.body.style.backgroundColor = this.value;
+			} else {
+				document.body.style.backgroundColor = 'white';
+			}
+		});
+	});
+</script>
