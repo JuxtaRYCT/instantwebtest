@@ -1,0 +1,13 @@
+{
+    "question": "The detective goes into the shower.",
+    "questioniD":"",
+    "options": [
+        {
+
+            "option": "Try to remove the shower head.",
+            "ifSelected": "questioniD",
+            "result": "There is a key inside the shower head.",
+            "ascii": ""
+        }
+    ]
+}

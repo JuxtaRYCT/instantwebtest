@@ -4,14 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mail Template</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Prevents scrolling */
+            background-color: black;
+            /* Optional: Avoids any background color flashes */
+        }
+
+        video {
+            position: fixed;
+            /* Fixed to cover the entire screen */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            /* Makes video fill screen without distortion */
+        }
+
+        iframe {
+            position: fixed;
+            /* Fixed to cover the entire screen */
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            /* Makes video fill screen without distortion */
+        }
+    </style>
 </head>
 
 <body>
-    <div class="parent">
-        <img class="logo" src="./Group 48095512.png">
-    </div>
+    <video autoplay muted loop
+        src="./Apple Mac OS Monterey Screen Saver Purple 4K - Phylosophers Stoned (1080p, h264).mp4">
+    </video>
+
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/pNVtThVBOxc?si=1OUEhWmbW9e5WASN&amp;controls=0"
+        title="YouTube video player" frameborder="0" allow="autoplay;" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe> -->
+
 </body>
 
 </html>
